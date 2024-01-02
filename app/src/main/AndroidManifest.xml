@@ -14,10 +14,11 @@
         android:theme="@style/Theme.Phytogram"
         tools:targetApi="31">
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".fragments.RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".fragments.LoginActivity"
+            android:label="Login"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
