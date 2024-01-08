@@ -30,8 +30,8 @@
 * развёртывание и управление приложением **Docer** или **Kubernetes**
 
 ***
-**Архитектура Java пакетов**
-#Пакеты сортируются в порядке от closest-to-backend до closest-to-the-user:
+**Архитектура Java пакетов:**
+пакеты сортируются в порядке от closest-to-backend до closest-to-the-user:
 
 ```├─ network
 ├─ models
