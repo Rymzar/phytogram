@@ -31,9 +31,10 @@
 
 ***
 **Архитектура Java пакетов:**
-пакеты сортируются в порядке от closest-to-backend до closest-to-the-user:
+пакеты сортируются в порядке от closest-to-backend до closest-to-the-user
 
-```├─ network
+```com.futurice.project
+├─ network
 ├─ models
 ├─ managers
 ├─ utils
