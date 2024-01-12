@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.phytogram.R
+import com.example.phytogram.db.DbHelper
 import com.example.phytogram.models.User
 
 class RegistrationActivity : AppCompatActivity() {
@@ -34,7 +35,17 @@ class RegistrationActivity : AppCompatActivity() {
                 Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
             else {
                 // блок регистрации пользователя
-                val user = User(login, email, phone, password, repeatPassword)
+                val user = User(login, email, phone, password)
+
+                val db = DbHelper(this, null)
+                db.addUser(user)
+                Toast.makeText(this, "Пользователь $login добавлен", Toast.LENGTH_LONG).show()
+
+                userLogin.text.clear()
+                userEmail.text.clear()
+                userPhone.text.clear()
+                userPassword.text.clear()
+                repeatUserPass.text.clear()
             }
         }
     }

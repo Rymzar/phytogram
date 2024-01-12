@@ -6,6 +6,6 @@ class User(
     val email: String,
     val phone: String,
     val password: String,
-    val repeatPassword: String
+    //val repeatPassword: String
 ) {
 }
