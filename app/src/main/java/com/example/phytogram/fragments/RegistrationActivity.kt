@@ -1,5 +1,6 @@
 package com.example.phytogram.fragments
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -33,7 +34,11 @@ class RegistrationActivity : AppCompatActivity() {
             // проверка пустых полей и вызов всплывающего окна
             if (login == "" || email == "" || phone == "" || password == "" || repeatPassword == "")
                 Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
-            else {
+            else if (password != repeatPassword) {
+                Toast.makeText(this, "Пароли не совпадают", Toast.LENGTH_LONG).show()
+                userPassword.text.clear()
+                repeatUserPass.text.clear()
+            } else {
                 // блок регистрации пользователя
                 val user = User(login, email, phone, password)
 
@@ -47,6 +52,8 @@ class RegistrationActivity : AppCompatActivity() {
                 userPassword.text.clear()
                 repeatUserPass.text.clear()
             }
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }
