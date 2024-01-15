@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Phytogram"
         tools:targetApi="31">
         <activity
-            android:name=".fragments.HomeActivity"
+            android:name=".ui.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

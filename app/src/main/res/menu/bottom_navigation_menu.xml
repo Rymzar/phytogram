@@ -5,23 +5,23 @@
     <item
         android:id="@+id/ic_home"
         android:icon="@drawable/ic_home"
-        android:title=""/>
+        android:title="@string/app_home"/>
     <item
         android:id="@+id/ic_search"
         android:icon="@drawable/ic_search"
-        android:title=""/>
+        android:title="@string/app_search"/>
     <item
         android:id="@+id/ic_add"
         android:icon="@drawable/ic_add"
-        android:title=""/>
+        android:title="@string/app_add"/>
     <item
         android:id="@+id/ic_notification"
         android:icon="@drawable/ic_notification"
-        android:title=""/>
+        android:title="@string/app_notification"/>
     <item
         android:id="@+id/ic_guide"
         android:icon="@drawable/ic_guide"
-        android:title=""/>
+        android:title="@string/app_guide"/>
 
 
 </menu>

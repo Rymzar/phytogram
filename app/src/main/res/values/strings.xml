@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">phytogram</string>
+    <string name="app_home">phytogram</string>
+    <string name="app_search">phytogram</string>
+    <string name="app_add">phytogram</string>
+    <string name="app_notification">phytogram</string>
+    <string name="app_guide">phytogram</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

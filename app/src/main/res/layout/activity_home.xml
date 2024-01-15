@@ -4,10 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.HomeActivity">
+    android:layout_height="match_parent">
+    <!--tools:context=".fragments.HomeActivity"
 
-    <!--we are creating 3 layouts for "top_tabs", "middle_viewpager" and "bottom_navigation" as well-->
+    we are creating 3 layouts for "top_tabs", "middle_viewpager" and "bottom_navigation" as well-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,6 +23,7 @@
             <include
                 layout="@layout/layout_top_tabs"/>
         </RelativeLayout>
+
         <!--second one is for "middle_viewpager"-->
 
         <RelativeLayout
@@ -37,10 +38,9 @@
                 layout="@layout/layout_center_viewpager"/>
         </RelativeLayout>
 
-        <!-- third one is for "bottom_navigation"-->
-            <include
-                layout="@layout/layout_bottom_navigation_view"/>
-
+        <!-- third one is for "bottom_navigation"
+                <include
+                    layout="@layout/layout_bottom_navigation_view"/>
+                -->
     </RelativeLayout>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
