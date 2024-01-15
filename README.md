@@ -29,3 +29,21 @@
 * Брокер сообщей **RabbitMQ**
 * развёртывание и управление приложением **Docer** или **Kubernetes**
 
+***
+**Архитектура Java пакетов:**
+пакеты сортируются в порядке от closest-to-backend до closest-to-the-user
+
+```
+com.futurice.project
+├─ network
+├─ models
+├─ managers
+├─ utils
+├─ fragments
+└─ views
+   ├─ adapters
+   ├─ actionbar
+   ├─ widgets
+   └─ notifications
+```
+
