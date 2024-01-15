@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.HomeActivity">
+    <!--we are creating 3 layouts for "top_tabs", "middle_viewpager" and "bottom_navigation" as well-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--first one is for "top_tabs"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reliLayout1">
+
+            <!--we are creating layout in "top_tabs" layout, let's call it: "sub_top_tabs" layout -->
+            <include
+                layout="@layout/layout_top_tabs"/>
+        </RelativeLayout>
+        <!--second one is for "middle_viewpager"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reliLayout2"
+            android:layout_below="@id/reliLayout1">
+
+            <!--here we are calling for viewpager-->
+
+            <include
+                layout="@layout/layout_center_viewpager"/>
+        </RelativeLayout>
+
+        <!-- third one is for "bottom_navigation"-->
+            <include
+                layout="@layout/layout_bottom_navigation_view"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
