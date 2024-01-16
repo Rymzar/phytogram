@@ -1,4 +1,4 @@
-package com.example.phytogram.ui
+package com.example.phytogram.fragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
