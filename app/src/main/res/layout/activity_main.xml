@@ -9,11 +9,12 @@
 
 
     <TextView
+        android:id="@+id/Phytogram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Phytogram"
-        android:textSize="50sp"
         android:textColor="@color/white"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
