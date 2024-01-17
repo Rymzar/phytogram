@@ -9,7 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.phytogram.R
 import com.example.phytogram.db.DbHelper
-import com.example.phytogram.ui.HomeActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
