@@ -11,6 +11,7 @@ import com.example.phytogram.retrofit.UserApi
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
@@ -31,6 +32,10 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
         }
+        //перехват логов
+        val interceptor = HttpLoggingInterceptor()
+        interceptor.level = HttpLoggingInterceptor.Level.BODY
+
         //функция Retrofit
         val retrofit = Retrofit.Builder().baseUrl("http://localhost:8080")
             .addConverterFactory(GsonConverterFactory.create()).build()
