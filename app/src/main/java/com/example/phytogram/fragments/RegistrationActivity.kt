@@ -40,6 +40,8 @@ class RegistrationActivity : AppCompatActivity() {
             } else {
                 //допилить post and get request
             }
+
+            //код для отправки http запроса
             val url = "http://localhost:8080/registration"
             //val stringRequest =
 
