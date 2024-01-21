@@ -25,7 +25,7 @@ class RegistrationActivity : AppCompatActivity() {
         val buttonRegistration: Button = findViewById(R.id.button_registration)
         // вешаем слушатель событий на кнопку
         buttonRegistration.setOnClickListener {
-            val login = userLogin.text.toString().trim()
+            /*val login = userLogin.text.toString().trim()
             val email = userEmail.text.toString().trim()
             val phone = userPhone.text.toString().trim()
             val password = userPassword.text.toString().trim()
@@ -41,7 +41,7 @@ class RegistrationActivity : AppCompatActivity() {
                 //допилить post and get request
             }
                 val url = "http://localhost:8080/registration"
-                //val stringRequest =
+                //val stringRequest =*/
 
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
