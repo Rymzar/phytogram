@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
 
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.phytogram.fragments.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.phytogram.fragments.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.phytogram.fragments.add.AddFragment"
+        android:label="@string/title_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.phytogram.fragments.notification.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/navigation_guide"
+        android:name="com.example.phytogram.fragments.guide.GuideFragment"
+        android:label="@string/title_guide"
+        tools:layout="@layout/fragment_guide" />
 </navigation>
