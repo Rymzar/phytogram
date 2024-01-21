@@ -17,9 +17,6 @@
         android:theme="@style/Theme.Phytogram"
         tools:targetApi="31" >
         <activity
-            android:name=".fragments.TestActivity"
-            android:exported="false" />
-        <activity
             android:name=".fragments.HomeActivity"
             android:exported="false" />
         <activity
