@@ -3,25 +3,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/ic_home"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
-        android:title="@string/app_home"/>
+        android:title="@string/title_home"/>
     <item
-        android:id="@+id/ic_search"
+        android:id="@+id/navigation_search"
         android:icon="@drawable/ic_search"
-        android:title="@string/app_search"/>
+        android:title="@string/title_search"/>
     <item
-        android:id="@+id/ic_add"
+        android:id="@+id/navigation_add"
         android:icon="@drawable/ic_add"
-        android:title="@string/app_add"/>
+        android:title="@string/title_add"/>
     <item
-        android:id="@+id/ic_notification"
+        android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notification"
-        android:title="@string/app_notification"/>
+        android:title="@string/title_notifications"/>
     <item
-        android:id="@+id/ic_guide"
+        android:id="@+id/navigation_guide"
         android:icon="@drawable/ic_guide"
-        android:title="@string/app_guide"/>
+        android:title="@string/title_guide"/>
 
 
 </menu>
